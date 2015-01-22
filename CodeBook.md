@@ -60,7 +60,7 @@ deviations) are kept:
 (*'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.*)
 
 
-![alt text](https://github.com/akandris16/getcleandata/blob/master/FeaturesTable.png "FeatureNames-Table")
+![FeatureNames-Table](https://github.com/akandris16/getcleandata/raw/master/FeaturesTable.png "FeatureNames-Table")
 
 
 ##Additional comments##

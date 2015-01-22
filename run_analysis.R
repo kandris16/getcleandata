@@ -66,19 +66,12 @@
     
   
 ### 3. Uses descriptive activity names to name the activities in the data set
+  
   ##merge act_test and act_train to mAct & sub_test and sub_train to mSub (paying attention to the order - test first, train second)
     mAct=unname(unlist(rbind(act_test,act_train))); mSub=unname(unlist(rbind(sub_test,sub_train)))
-  ##name the new dataframes
-    #mAct <- as.factor(unlist(mAct)); levels(mAct) = c('Walking','Walking_Upstairs','Walking_Downstairs','Sitting','Standing','Laying')
   ##give descriptive labels to the activities 
-    #mAct=factor(mAct,levels=c('1','2','3','4','5','6'),labels=c('Walking','Walking_Upstairs','Walking_Downstairs','Sitting','Standing','Laying'))
     newLabels=c('Walking','Walking_Upstairs','Walking_Downstairs','Sitting','Standing','Laying')
-    #mAct=factor(unlist(mAct))
-    #a=0
-    #levels(mAct)=sapply(as.list(newLevels), function (x) {a=a+1;sub(levels(mAct)[a],x,levels(mAct))}) 
-  
-    mAct=factor(mAct,levels=c("1","2","3","4","5","6"),labels=newLabels)
-  
+    mAct=factor(mAct,levels=c("1","2","3","4","5","6"),labels=newLabels) 
   ##cbind smData with mAct and mSub
     smData=cbind(smData,mAct);smData=cbind(smData,mSub)
   
